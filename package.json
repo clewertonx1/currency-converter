@@ -2,13 +2,13 @@
   "name": "currency-converter-module",
   "version": "1.0.0",
 
-  "description": "",
+  "description": "An API module to facilitate currency conversion",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["currency", "convert", "api","bank", "module", "easy","dolar", "real", "USD", "BRL","EUR"],
+  "author": "Clewerton Roque",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.0"

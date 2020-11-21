@@ -1,11 +1,10 @@
-console.log('teste')
 
 const currency = require('./src/currency-converter')
 
-async function aaa(){
-    var teste = await currency.convertCurrencyByCode({value: 2, code: 'BRL'},{code: 'USD'})
-    console.log(await teste)
+async function exemple(){
+    var test = await currency.convertCurrencyByCode({value: 4, code: 'USD'},{code: 'BRL'})
+    console.log(await test)
 }
+exemple()
 
-aaa()
 module.exports = require('./src/currency-converter')
