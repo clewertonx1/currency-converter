@@ -1,4 +1,4 @@
 module.exports = {
-    getConvertCurrencyByCode: require('./controler/currency'),
+    convertCurrencyByCode: require('./controler/currency'),
     
 };

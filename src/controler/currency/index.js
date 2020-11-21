@@ -2,13 +2,12 @@ const getCurrencys = require('../../services/currency');
 
 
 // fistCoin is the one to be converted based on secondCoin
-async function getConvertCurrencyByCode(fistCoin, secondCoin){
+async function convertCurrencyByCode(fistCoin, secondCoin){
 
     const fistCoinValue = fistCoin.value 
     const fistCoinCode = fistCoin.code
-    const secondCoinValue = secondCoin.value 
-    const secondCoinCode = secondCoin.code
 
+    const secondCoinCode = secondCoin.code
 
     /*console.log(nome.length)
     if (nome.length < 3) {
@@ -16,10 +15,9 @@ async function getConvertCurrencyByCode(fistCoin, secondCoin){
     } */
 
     try {
-        console.log(fistCoinCode)
         const listCurrency  = await getCurrencys(fistCoinCode);
-        
-        return listCurrency;
+        const result = fistCoinValue * listCurrency[secondCoinCode]
+        return result;
     
     } catch (error) {
         return JSON.stringify({"error":"The code of coin is wrong"});
@@ -27,4 +25,4 @@ async function getConvertCurrencyByCode(fistCoin, secondCoin){
 
 }
 
-module.exports = getConvertCurrencyByCode;
+module.exports = convertCurrencyByCode;

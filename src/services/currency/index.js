@@ -8,7 +8,9 @@ async function getCurrencys(codeBase) {
     console.log(url)
 
     try {
-        return await axios.get(url);
+        let data = await axios.get(url);
+        data = data.data.rates
+        return data
         
     } catch (error) {
         return JSON.stringify({"erro": "It was not possible to search for currency values"});
