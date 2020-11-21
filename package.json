@@ -4,7 +4,7 @@
   "description": "An API module to facilitate currency conversion",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js"
+    
   },
   "keywords": [
     "currency",
