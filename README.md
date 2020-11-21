@@ -43,7 +43,7 @@ async function Example(){
 }
 Example()
 ```
-The value must be an int or float, and the code must be a string
+The *value* must be an int or float, and the *code* must be a string
 
 
 ### Codes of currencies
