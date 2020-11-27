@@ -4,6 +4,9 @@
 
 This is a nodeJS module to facilitate the conversion of currencies, it uses the api of the central bank of europe as a reference (https://exchangeratesapi.io/)
 
+npm package: https://www.npmjs.com/package/currency-converter-module
+
+
 ### Install 
 
 To install just run: 
