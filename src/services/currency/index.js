@@ -5,7 +5,6 @@ const axios = require('axios');
 async function getCurrencys(codeBase) {
     
     const url = `https://api.exchangeratesapi.io/latest?base=${codeBase}`;
-    console.log(url)
 
     try {
         let data = await axios.get(url);
